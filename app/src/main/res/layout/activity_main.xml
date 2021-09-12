@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/lay1"
+        android:orientation="vertical"
+        app:flow_verticalAlign="center"
+        android:layout_width="match_parent"
+        android:gravity="center_horizontal"
+        android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_marginTop="100sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="Product Viewed"
+        android:layout_gravity="center_vertical|center_horizontal"
+        tools:layout_editor_absoluteX="148dp"
+        tools:layout_editor_absoluteY="335dp" />
+
+        <LinearLayout
+            android:id="@+id/layout2"
+            android:layout_width="match_parent"
+            android:visibility="invisible"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+            <EditText
+                android:id="@+id/edit1"
+                android:layout_width="match_parent"
+                android:layout_margin="20sp"
+                android:hint="Name"
+                android:layout_height="100sp"></EditText>
+            <EditText
+                android:id="@+id/edit2"
+                android:hint="Email"
+                android:layout_width="match_parent"
+                android:layout_margin="20sp"
+                android:layout_height="100sp"></EditText>
+
+            <Button
+                android:id="@+id/send_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Send To CleverTap"
+                ></Button>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
